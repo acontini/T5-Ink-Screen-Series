@@ -1,6 +1,6 @@
 
 #define TTGO_T5_1_2 0
-#define TTGO_T5_2_0 0
+#define TTGO_T5_2_0 1
 #define TTGO_T5_2_1 0
 #define TTGO_T5_2_2 0
 #define TTGO_T5_2_3 0
@@ -13,7 +13,7 @@
 // #include <GxGDEH029A1/GxGDEH029A1.h>     // 2.9" b/w
 //#include <GxGDEW029Z10/GxGDEW029Z10.h>    // 2.9" b/w/r
 //#include <GxGDE0213B1/GxGDE0213B1.h>      // 2.13" b/w
-// #include <GxGDEW0213Z16/GxGDEW0213Z16.h>  // 2.13" b/w/r
+//#include <GxGDEW0213Z16/GxGDEW0213Z16.h>  // 2.13" b/w/r
 #define ELINK_BUSY 4
 #define ELINK_RESET 16
 #define ELINK_DC 17
@@ -61,7 +61,8 @@
 
 #elif (TTGO_T5_2_0)||(TTGO_T5_2_3)
 // #include <GxGDE0213B1/GxGDE0213B1.h>      // 2.13" b/w
-#include <GxGDE0213B72/GxGDE0213B72.h>      // 2.13" b/w
+// #include <GxGDE0213B72/GxGDE0213B72.h>      // 2.13" b/w
+#include <GxGDEW0213Z16/GxGDEW0213Z16.h>  // 2.13" b/w/r
 #define SPI_MOSI 23
 #define SPI_MISO -1
 #define SPI_CLK 18
